@@ -1,0 +1,23 @@
+{
+	"Version": "2008-10-17",
+	"Id": "PolicyForCloudFrontPrivateContent",
+	"Statement": [
+		{
+			"Sid": "AllowCloudFrontServicePrincipal",
+			"Effect": "Allow",
+			"Principal": {
+			    "*"
+				// "Service": "cloudfront.amazonaws.com"
+			},
+			"Action": [
+				"s3:GetObject"
+			],
+			"Resource": "arn:aws:s3:::website-portfolio-thanhtn23/*",
+// 			"Condition": {
+// 				"StringEquals": {
+// 					"AWS:SourceArn": "arn:aws:cloudfront::648949615205:distribution/E1UBBY5UHQEWTG"
+// 				}
+// 			}
+		}
+	]
+}
