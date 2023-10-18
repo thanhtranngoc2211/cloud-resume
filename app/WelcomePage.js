@@ -11,7 +11,12 @@ async function getData() {
       return cachedData;
   }
 
-  const res = await fetch('https://oydsr9nyk8.execute-api.ap-east-1.amazonaws.com/dev/counter-api')
+  const res = await fetch('https://oydsr9nyk8.execute-api.ap-east-1.amazonaws.com/prod/counter-api', 
+  {
+    cache: 'no-cache'
+  }
+  
+  )
 
   const data = await res.json()
 
