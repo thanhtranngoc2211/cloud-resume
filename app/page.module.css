@@ -42,6 +42,7 @@
 }
 
 .moreDescription {
+  color: white;
   cursor: pointer;
   font-size: large;
   height: 3rem;

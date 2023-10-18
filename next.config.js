@@ -6,7 +6,8 @@ const nextConfig = {
         'puraenvidia.com'    
     ]
     },
-    output: 'export'
+    output: 'export',
+    reactStrictMode: false
 }
 
 module.exports = nextConfig

@@ -11,18 +11,16 @@ export default function WelcomePage() {
     element?.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
   }
   
-  // const [data, setData] = useState(null)
-  // const [isLoading, setLoading] = useState(true)
-  // const [apiCalled, setApiCalled] = useState(false)
+  const [data, setData] = useState(null)
+  const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
-    // fetch('https://oydsr9nyk8.execute-api.ap-east-1.amazonaws.com/dev/counter-api')
-    //     .then((res) => res.json())
-    //     .then((data) => {
-    //         setData(data)
-    //         setLoading(false)
-    //         setApiCalled(true) // Đánh dấu rằng API đã được gọi
-    //     })
+    fetch('https://oydsr9nyk8.execute-api.ap-east-1.amazonaws.com/dev/counter-api')
+        .then((res) => res.json())
+        .then((data) => {
+            setData(data)
+            setLoading(false)
+        })
     console.log('called')
   }, [])
 
@@ -35,7 +33,7 @@ export default function WelcomePage() {
             More about me!
           </button>
           <footer className={styles.footer}>
-            {/* <div>Totally this page has {JSON.parse(data.body).N} visitor!!!</div> */}
+            {isLoading ? (<div>Loading...</div>) : (<div>Totally this page has {JSON.parse(data.body).N} visitor!!!</div>)}
           </footer>
       </div>
   )
