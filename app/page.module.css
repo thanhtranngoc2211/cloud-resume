@@ -1,0 +1,239 @@
+/* Welcome Page */
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: 100vh;
+  background: linear-gradient(-45deg, #071952, #088395, #35A29F, #F2F7A1);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+.authorName {
+  font-size: 5rem;
+}
+
+.contactButton {
+  cursor: pointer;
+}
+
+.vercelLogo {
+  filter: invert(1);
+  transition-duration: 0.5s;
+}
+
+.vercelLogo:hover {
+  width: 4rem;
+  height: 4rem;
+  filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70)
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin: 3rem 0rem 3rem 0rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.moreDescription {
+  cursor: pointer;
+  font-size: large;
+  height: 3rem;
+  width: 10rem;
+  background-color: transparent;
+  border-radius: 0.3rem;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+
+.moreDescription_invert {
+  color: black;
+  cursor: pointer;
+  font-size: large;
+  height: 3rem;
+  width: 10rem;
+  background-color: transparent;
+  border-radius: 0.3rem;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+
+.moreDescription_invert:hover {
+  color: white;
+  background-color: black;
+}
+
+.moreDescription:hover {
+  background: white;
+  color: black;
+}
+
+.footer {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+}
+
+/* Main Section */
+
+/* About Me Section */
+
+.main_section {
+  background-color: #f0f0f0;
+  height: 100vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about_me_section {
+  background-color: #e3e3e3;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.information {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.description_text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Recent Projects */
+
+.recent_project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+}
+
+.grid_projects {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 80%;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem 2rem;
+}
+
+.grid_projects_item {
+  background-color: white;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  width: 25rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 6px #d6d6d6;
+  transition-duration: 0.4s;
+}
+
+.grid_projects_item:hover {
+  margin-top: -0.5rem;
+  box-shadow: 5px 5px 10px #d6d6d6;
+}
+
+/* Project Card */
+
+.main_card {
+  height: 80%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Footer Main */
+
+.footer_main {
+  color: black;
+  height: 100vh;
+  background-color: #e3e3e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_main_main {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.email {
+  color: #4F709C;
+  transition-duration: 0.4s;
+}
+
+.email:hover {
+  color: #213555;
+}
+
+.techshow {
+  margin-top: 10rem;
+  display: flex;
+  animation: technology 30s ease infinite;
+  position: relative;
+}
+
+/* Animations */
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes technology {
+  0%,
+  100% {
+    left: -510px;
+  }
+  50% {
+    left: 600px;
+  } 
+}
